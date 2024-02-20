@@ -23,7 +23,7 @@ body {
 }
 
 #wrongInps {
-  color: red;
+  color: rgb(220, 40, 40);
   text-align: center;
 }
 .wrongFlag {
