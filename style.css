@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #110e14;
+}
+#cruds {
+  width: 80%;
+  margin: 0 auto;
+}
+#head {
+  width: 100%;
+  margin: 5px auto;
+  text-align: center;
+  color: white;
+}
+#head h1 {
+  font-size: 2.5rem;
+}
+
+#wrongInps {
+  color: red;
+  text-align: center;
+}
+.wrongFlag {
+  border: 1px solid red;
+}
+#inputs input {
+  width: 100%;
+  background-color: black;
+  height: 40px;
+  padding: 15px;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  color: white;
+  transition: 0.5s;
+  font-size: 17px;
+}
+#inputs input:focus {
+  transform: scale(1.1);
+  background-color: #0a0a0b;
+  border: 1px solid white !important;
+}
+#inputs .flexInputs {
+  width: 100%;
+}
+#inputs .flexInputs input {
+  width: 20%;
+  margin-right: 5px;
+}
+#inputs .flexInputs #total {
+  background-color: rgb(95, 74, 164);
+  padding: 6px 8px;
+  border-radius: 5px;
+  color: white;
+}
+#inputs .flexInputs #total::before {
+  content: "TOTAL : ";
+}
+#btnCreate {
+  width: 98%;
+  margin: 5px auto;
+  display: block;
+}
+button {
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(95, 74, 164);
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: rgb(141, 93, 236);
+}
+#flexBtn {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+#flexBtn button {
+  width: 45%;
+}
+#deleteAll {
+  width: 100%;
+}
+#deleteAll button {
+  width: 100%;
+  margin: 10px 0;
+  background-color: red;
+}
+#deleteAll button:hover {
+  background-color: rgb(203, 33, 33);
+}
+#outputs table {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+#outputs table th {
+  text-transform: uppercase;
+}
+#outputs table td,
+th {
+  color: white;
+  padding: 5px;
+}
+#outputs table button {
+  padding: 10px 15px;
+}
+@media only screen and (max-width: 813px) {
+  #inputs .flexInputs input {
+    display: block;
+    width: 100%;
+  }
+  #inputs .flexInputs #total {
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+    padding: 10px 5px;
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+  }
+  td::before {
+    content: attr(data-cell);
+    text-transform: uppercase;
+    color: rgb(141, 93, 236);
+    margin-right: 1rem;
+  }
+  td button {
+    width: 100%;
+  }
+}
