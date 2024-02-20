@@ -26,9 +26,6 @@ body {
   color: rgb(220, 40, 40);
   text-align: center;
 }
-.wrongFlag {
-  border: 1px solid red;
-}
 #inputs input {
   width: 100%;
   background-color: black;
